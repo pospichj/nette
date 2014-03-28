@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nette\Database\Table\SqlBuilder | Nette Framework 2.0.10 API</title>
+
+	<script type="text/javascript" src="resources/combined.js?2383851858"></script>
+	<script type="text/javascript" src="elementlist.js?669254595"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3746977979" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Nette Framework 2.0.10 API" href="http://api.nette.org/2.0/opensearch.xml" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="Nette.Database.Table.ActiveRow.html">ActiveRow</a></li>
+				<li><a href="Nette.Database.Table.GroupedSelection.html">GroupedSelection</a></li>
+				<li><a href="Nette.Database.Table.Selection.html">Selection</a></li>
+				<li class="active"><a href="Nette.Database.Table.SqlBuilder.html">SqlBuilder</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form action="http://www.google.com/cse" id="search">
+		<input type="hidden" name="cx" value="011549293477758430224:vxofa9ufnhc" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="hidden" name="more" value="api" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.Database.Table.html" title="Summary of Nette\Database\Table"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="deprecated.html" title="List of deprecated elements"><span>Deprecated</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class SqlBuilder</h1>
+
+
+	<div class="description">
+	
+<p>Builds SQL query. SqlBuilder is based on great library NotORM <a
+href="http://www.notorm.com">http://www.notorm.com</a> written by Jakub
+Vrana.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Nette\Database\Table\SqlBuilder</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.Database.html">Database</a>\<a href="namespace-Nette.Database.Table.html">Table</a><br />
+		
+
+				<b>Author:</b>
+				Jakub Vrana<br />
+				<b>Author:</b>
+				Jan Skrasek<br />
+		<b>Located at</b> <a href="source-Database.Table.SqlBuilder.php.html#21-389" title="Go to source code">Database/Table/SqlBuilder.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#74-81" title="Go to source code">__construct</a>( <span> <var>$tableName</var></span>, <span><code><a href="Nette.Database.Connection.html">Nette\Database\Connection</a></code> <var>$connection</var></span>, <span><code><a href="Nette.Database.IReflection.html">Nette\Database\IReflection</a></code> <var>$reflection</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildInsertQuery" id="_buildInsertQuery">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildInsertQuery">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#85-88" title="Go to source code">buildInsertQuery</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildUpdateQuery" id="_buildUpdateQuery">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildUpdateQuery">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#92-95" title="Go to source code">buildUpdateQuery</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildDeleteQuery" id="_buildDeleteQuery">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildDeleteQuery">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#99-102" title="Go to source code">buildDeleteQuery</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="importConditions" id="_importConditions">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_importConditions">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#106-111" title="Go to source code">importConditions</a>( <span><code><a href="Nette.Database.Table.SqlBuilder.html">Nette\Database\Table\SqlBuilder</a></code> <var>$builder</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addSelect" id="_addSelect">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addSelect">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#119-122" title="Go to source code">addSelect</a>( <span> <var>$columns</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSelect" id="_getSelect">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSelect">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#126-129" title="Go to source code">getSelect</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addWhere" id="_addWhere">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addWhere">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#133-188" title="Go to source code">addWhere</a>( <span> <var>$condition</var></span>, <span> <var>$parameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConditions" id="_getConditions">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConditions">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#192-195" title="Go to source code">getConditions</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addOrder" id="_addOrder">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addOrder">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#199-202" title="Go to source code">addOrder</a>( <span> <var>$columns</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOrder" id="_getOrder">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOrder">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#206-209" title="Go to source code">getOrder</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLimit" id="_setLimit">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLimit">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#213-217" title="Go to source code">setLimit</a>( <span> <var>$limit</var></span>, <span> <var>$offset</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLimit" id="_getLimit">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLimit">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#221-224" title="Go to source code">getLimit</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOffset" id="_getOffset">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOffset">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#228-231" title="Go to source code">getOffset</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setGroup" id="_setGroup">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setGroup">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#235-239" title="Go to source code">setGroup</a>( <span> <var>$columns</var></span>, <span> <var>$having</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGroup" id="_getGroup">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGroup">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#243-246" title="Go to source code">getGroup</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHaving" id="_getHaving">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHaving">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#250-253" title="Go to source code">getHaving</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildSelectQuery" id="_buildSelectQuery">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildSelectQuery">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#261-288" title="Go to source code">buildSelectQuery</a>( <span>list <var>$columns</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns SQL query.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns SQL query.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>list</code><br>of columns</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameters" id="_getParameters">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameters">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#292-295" title="Go to source code">getParameters</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildJoins" id="_buildJoins">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildJoins">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#299-330" title="Go to source code">buildJoins</a>( <span> <var>$val</var></span>, <span> <var>$inner</var> = <span class="php-keyword1">FALSE</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildConditions" id="_buildConditions">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildConditions">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#334-360" title="Go to source code">buildConditions</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildTopClause" id="_buildTopClause">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildTopClause">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#364-370" title="Go to source code">buildTopClause</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tryDelimite" id="_tryDelimite">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tryDelimite">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#374-380" title="Go to source code">tryDelimite</a>( <span> <var>$s</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeExtraTables" id="_removeExtraTables">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeExtraTables">#</a>
+		<code><a href="source-Database.Table.SqlBuilder.php.html#384-387" title="Go to source code">removeExtraTables</a>( <span> <var>$expression</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="Nette.Object.html#___call">__call()</a>, 
+			<a href="Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="Nette.Object.html#___get">__get()</a>, 
+			<a href="Nette.Object.html#___isset">__isset()</a>, 
+			<a href="Nette.Object.html#___set">__set()</a>, 
+			<a href="Nette.Object.html#___unset">__unset()</a>, 
+			<a href="Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="tableName" id="$tableName">
+		<td class="attributes"><code>
+			protected  
+			
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#36-37" title="Go to source code"><var>$tableName</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$tableName" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="databaseReflection" id="$databaseReflection">
+		<td class="attributes"><code>
+			protected  
+			
+			<code><a href="Nette.Database.IReflection.html">Nette\Database\IReflection</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#39-40" title="Go to source code"><var>$databaseReflection</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$databaseReflection" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="delimitedTable" id="$delimitedTable">
+		<td class="attributes"><code>
+			protected  
+			
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#42-43" title="Go to source code"><var>$delimitedTable</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$delimitedTable" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>delimited table name</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>delimited table name</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="$select">
+		<td class="attributes"><code>
+			protected  
+			
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#45-46" title="Go to source code"><var>$select</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$select" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of column to select</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of column to select</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="where" id="$where">
+		<td class="attributes"><code>
+			protected  
+			
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#48-49" title="Go to source code"><var>$where</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$where" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of where conditions</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of where conditions</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="conditions" id="$conditions">
+		<td class="attributes"><code>
+			protected  
+			
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#51-52" title="Go to source code"><var>$conditions</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$conditions" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of where conditions for caching</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of where conditions for caching</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="parameters" id="$parameters">
+		<td class="attributes"><code>
+			protected  
+			
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#54-55" title="Go to source code"><var>$parameters</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$parameters" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of parameters passed to where conditions</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of parameters passed to where conditions</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="order" id="$order">
+		<td class="attributes"><code>
+			protected  
+			
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#57-58" title="Go to source code"><var>$order</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$order" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>or columns to order by</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>or columns to order by</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="limit" id="$limit">
+		<td class="attributes"><code>
+			protected  
+			
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#60-61" title="Go to source code"><var>$limit</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">NULL</span></code></td>
+		<td class="description"><div>
+			<a href="#$limit" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>number of rows to fetch</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>number of rows to fetch</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="offset" id="$offset">
+		<td class="attributes"><code>
+			protected  
+			
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#63-64" title="Go to source code"><var>$offset</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">NULL</span></code></td>
+		<td class="description"><div>
+			<a href="#$offset" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>first row to fetch</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>first row to fetch</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="group" id="$group">
+		<td class="attributes"><code>
+			protected  
+			
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#66-67" title="Go to source code"><var>$group</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">''</span></code></td>
+		<td class="description"><div>
+			<a href="#$group" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>columns to grouping</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>columns to grouping</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="having" id="$having">
+		<td class="attributes"><code>
+			protected  
+			
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-Database.Table.SqlBuilder.php.html#69-70" title="Go to source code"><var>$having</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">''</span></code></td>
+		<td class="description"><div>
+			<a href="#$having" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>grouping condition</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>grouping condition</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Nette Framework 2.0.10 API API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
